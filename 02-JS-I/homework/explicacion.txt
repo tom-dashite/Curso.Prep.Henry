@@ -1,0 +1,48 @@
+Variables:
+Las variables, como lo dice su nombre, son valores que se guardan en la memoria del programa.
+En JS, existen 3 formas de declararlas:
+var uno = 1;
+utilizar la palabra reservada var, salvo casos excepcionales, es considerado una mala practica ya que puede ocasionar errores por su alcance en el scope.
+let uno = 1;
+la palabra reservada let, en cambio, debe ser utilizada cuando declaramos variables que VAN a tener cambios, es mejor utilizar let en vez de var, ya que el alcance en el scope esta bien definido.
+const uno = 1;
+la palabra reservada const, se utiliza para declarar valores que NO van a cambiar. 
+
+Strings:
+Un string es un valor de tipo texto. Deben escribirse entre comillas dobles ("texto"), simples ('texto') o en las nuevas comillas (`texto`)
+let texto = "hola";
+
+Funciones:
+Una funcion es codigo. Se utilizan para poder reutilizar este codigo y no tener que escribirlo cada vez que querramos hacer esa "tarea".
+Pueden recibir parametros, para que sea mas dinamico.
+function sumar (numero1, numero2) {
+    let resultado = numero1 + numero2;
+    console.log(resultado);
+}
+
+Return: 
+El return se utiliza para que una funcion nos devuelva el valor que le indicamos que retorne. Y realizar este retorno, causa que la funcion termine.
+function sumar(numero1, numero2) {
+    let resultado = numero1 + numero2;
+    return resultado;
+}
+let resultado = sumar(2,2);
+console.log(resultado) // nos aparecera '4' en la consola 
+
+If Statement:
+Una declaracion if, es una prueba logica, en donde se comprueba si una condicion se cumple, y en base al resultado ejecuta el codigo que le indiquemos.
+para agregar mas "casos", se utiliza else if, y si queremos que se ejecute algo cuando en ninguno de los casos declarados la condicion se cumple, utilizamos else. 
+if (condicion = 1) {
+    console.log('la condicion es 1, es verdadero, se ejecuta')
+}
+else if (condicion = false) {
+    console.log('la condicion es 2, se ejecuta)
+}
+else {
+    console.log('la condicion es otra no especificada, se ejecuta')
+}
+Se evaluaran las condiciones que esten primeras, en cuanto una condicion se cumple, el resto se omite.
+
+Valores booleanos:
+Solo pueden ser 2, true o false.
+
