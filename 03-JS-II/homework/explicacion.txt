@@ -1,0 +1,38 @@
+Bucle for :
+Es una funcion que permite repetir tu codigo la cantidad de veces que indiques.
+su sintaxis es la siguiente: 
+for (let i = 0; i < x; i++) {
+    "codigo"
+}
+Donde primero hay que declarar una variable (generalmente se utiliza i), hay que especificar una condicion para que el codigo sea ejecutado, y declarar el cambio que va a tener la variable previamente declarada (por lo general, se incrementa)
+Primero se evaluara si la condicion se cumple. Inicialmente, i va a valer 0. Si i debe ser menor que x, y x vale 10, va a pasar a ejecutar el codigo indicado. cuando termine, el valor de i va a incrementarse en 1 (0 + 1 = 1).
+Luego pasara a volver a evaluar si la condicion se cumple. Ya que x vale 10, y ahora i vale 1, la condicion se sigue cumpliendo, por lo que se volvera a ejecutar el codigo y se volvera a aumentar el valor de i en 1 (1 + 1 = 2).
+Por esto se llama bucle, porque lo explicado anteriormente se repetira siempre y cuando i tenga un valor menor a x. Cuando la condicion deja de cumplirse, se termina el ciclo y no se vuelve a ejecutar el codigo.
+
+Operadores && y || :
+Son operadores logicos, que se utilizan para unir dos condiciones.
+El operador && (and) puede traducirse como "y si tambien", y evalua si las condiciones son verdaderas o falsas y nos devuelve un booleano.
+Para que nos devuelva true, AMBAS condiciones deben ser verdaderas. En caso de que una sea falsa, nos devolvera false.
+Ejemplo:
+(5 > 1 && 1 < 5)
+En este caso la primera condicion es verdadera, y la segunda tambien. Por lo que nos devolvera true.
+Ejemplo:
+(5 > 1 && 1 > 5)
+En este caso, aunque la primera condicion es verdadera, la segunda es falsa. Por lo que nos devolvera false.
+
+El operador || (or) puede traducirse como "o si", y evalua si las condiciones son verdaderas o falsas y nos devuelve un booleano.
+A diferencia de && (and), con que UNA condicion sea verdadera, es suficiente para que nos devuelva true.
+(5 > 1 || 1 > 5)
+En este caso la primera condicion es verdadera, y la segunda es falsa. Ya que una de las condiciones se cumple, nos devolvera true.
+Ejemplo:
+(5 < 1 || 1 > 5)
+En este caso, ambas condiciones son falsas, por lo que nos devolvera false.
+
+Pueden compararse mas de dos condiciones, y el valor que nos devuelva, dependera de las reglas explicadas anteriormente.
+Ejemplo:
+(5 > 1 || 1 > 5 && 5 === 5)
+Aqui, la primera condicion es verdadera, la segunda es falsa, y la tercera es verdadera. las primeras dos, al estar unidas por un || (or), solo necesitamos que una sea verdadera para que devuelva true.
+Sin embargo, la tercera, al tener un && (and), debe ser verdadera para que TODA la operacion nos devuelva true. Ya que es verdadera, nos devolvera true.
+Ejemplo:
+(5 > 1 || 1 < 5 && 5 !== 5)
+Aqui, la primera condicion es verdadera, la segunda es verdadera, y la tercera es falsa. Aunque las primeras dos sean verdaderas, porque la tercera contiene un && (and), nos devolvera false.
