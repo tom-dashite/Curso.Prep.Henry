@@ -1,0 +1,14 @@
+Arrays:
+Tienen la particularidad de poder contener mas de un dato. Es decir, es como una variable con multiples valores.
+Para declararlos deben escribrse entre corchetes [] y cada valor debe ser separado por una coma (,)
+Pueden contener cualquier tipo de valor, ya sea numerico, booleano, string, una variable o incluso un objeto.
+
+let array = [1, 2, 3, 4, 5,'texto', true, null];
+
+Los datos que contiene cada array, estan indexados / enumerados. El primer valor del array tiene el indice 0.
+Para llamarlos, hay que poner el nombre del array y el indice entre corchetes []
+Tomando el array de arriba, por ejemplo:
+array[0] = 1;
+array[1] = 2;
+array[6] = true;
+Si se llama al indice de un array que no esta declarado. Por ejemplo array[8] retorna 'undefined'.
