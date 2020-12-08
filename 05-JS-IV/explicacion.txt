@@ -1,0 +1,68 @@
+Objetos:
+En Javascript, se puede decir que practicamente todo es un objeto.
+Vendrian a ser como los arrays, la diferencia con estos es que podemos darles un identificador (key) a lo que seria el indice de los arrays. 
+En otras palabras, un array es un objeto cuyas keys son numericas.
+La sintaxis de los objetos es la siguiente:
+nombreDeObjeto = {
+    identificador1: valor1,
+    identificador2: valor2,
+    identificador3: valor3
+};
+Pueden contener cualquier tipo de valor. Incluso otro objeto.
+
+Propiedades:
+Las propiedades de un objeto, son los 'keys'. Es decir, son el nombre/identificador del valor al que queremos acceder.
+Para acceder a ellas debemos llamar al objeto, anteponer un punto (.) y escribir el nombre de la propiedad.
+Ejemplo:
+nombreDeObjeto.identificador1 = valor1;
+Tambien se las puede llamar utilizando la notacion entre corchetes. Se llama al objeto, y se escribe entre corchetes el nombre de la propiedad. Es importante que sea un string.
+Ejemplo:
+nombreDeObjeto['identificador2'] = valor2;
+Ejemplo2:
+let propiedadBuscada = 'identificador3';
+nombreDeObjeto[propiedadBuscada] = valor3;
+
+Metodos:
+Los metodos son funciones que podemos guardar dentro un objeto. 
+Esto nos permite ahorrar mucho codigo y simplicar.
+Para llamar a la funcion, se hace de la misma manera que con las propiedades, anteponiendo un punto (.) y escribiendo el nombre de la funcion salvo que se agrega el parentesis caracteristico de las funciones.
+Ejemplo:
+const objeto = {
+    miFuncion: function() {
+        console.log('hola!');
+    }
+}
+objeto.miFuncion(); // nos dira 'hola!' en la consola
+
+Bucles for in:
+Es un tipo de bucle, especial, ya que recorre los elementos del objeto (tambien puede utilizarse en arrays, pero no es recomendado ya que omitira aquellos indices en donde los valores no esten definidos).
+Es el utilizado para iterar los objetos ya que "busca" los valores definidos, ya sean 2, 3, 5, 100 etc.
+Si queremos crear un array con los nombres de las propiedades de un objeto, y otro con los valores de las propiedades la sintaxis seria la siguiente
+let arrayPropiedades=[],
+    arrayValores=[];
+for ( let propiedades in nombreDeObjeto) {
+arrayPropiedades.push(propiedades);
+arrayValores.push(nombreDeObjeto[propiedades]);
+} 
+arrayPropiedades = [identificador1, identificador2, identificador3];
+arrayValores = [valor1, valor2, valor3];
+
+This:
+Es una palabra reservada. Se utiliza para hacer referencia al dato que pertenece al nivel del scope donde fue llamada. Es muy comun utilizarla en objetos, e increiblemente util.
+Para utilizarla correctamente, hay que asegurarse que estamos en el nivel de scope correcto, ya que su valor depende de 'donde' la estemos invocando.
+
+Objetos en Javascript:
+En JS, TODO es un objeto. Pero (y por suerte, para facilitar las cosas) no es necesario declarar todo como un objeto.
+Por ejemplo, si tenemos una variable tipo string, normalmente la declaramos de la siguiente forma:
+let miString = 'texto';
+Sin embargo, puede hacerse de la siguiente forma y el resultado sera el mismo:
+let miString = new String('texto');
+Lo mismo con los numeros:
+let miNumero = 10;
+let miNumero = new Number(10);
+Con los arrays:
+let miArray = [0,1,2,'hola'];
+let miArray = new Array(0,1,2,'hola');
+Etcetera.
+Nota: La declaracion de valores utilizando la palabra reservada new, puede entenderse como que el tipo de valor (Array, Number, String) es el nombre de la clase, y lo que va en los parentesis serian los parametros del constructor.
+(Estos conceptos, seran vistos en el proximo capitulo).
