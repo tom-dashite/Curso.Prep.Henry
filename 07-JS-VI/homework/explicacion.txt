@@ -1,0 +1,12 @@
+Funciones CallBack:
+Son funciones cuyos argumentos incluyen otra funcion (Es decir una funcion dentro de otra funcion) para ser ejecutada.
+Esto vuelve el codigo mucho mas dinamico y facilita mucho programar asincronamente.
+Ya que nos aseguramos que la funcion 'callback' se ejecute en el momento en que deseemos.
+Ejemplo:
+function callback(funcion) {
+    funcion();
+}
+function hacerAlgo(){
+    console.log('terminado');
+}
+callback(hacerAlgo); //dira 'terminado' en la consola
