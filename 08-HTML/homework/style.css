@@ -1,0 +1,94 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url("https://i.pinimg.com/originals/01/49/b7/0149b70756b2630d43dad0dd23bef0f8.png");
+    background-position: center;
+    background-size: contain;
+    width: 90%;
+    text-shadow: 2px 1px 3px rgb(95, 80, 133); 
+}
+#spanId{
+    color: rgb(20, 2, 60);
+    display: block;
+    text-align: justify;
+    font-size: 16px;
+    margin: 0;
+    padding: 10px 35px;
+}
+span {
+    color: rgb(20, 2, 60);
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+    padding: 0;
+}
+a { margin: 0px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(30, 5, 90);
+    transition: color 1s;
+    padding-bottom: 30px;
+}
+a:visited {
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(30, 5, 90);
+}
+a:hover {
+    transition: color 1s;
+    color: rgb(60, 10, 180);
+}
+h1{
+    font-size: 45px;
+    color: rgb(50, 15, 120);
+    text-align: center;
+    margin: 0px;
+    padding: 30px;
+}
+h3, h4 {
+    padding: 5px 10px;
+    margin: 0px;
+    font-size: 28px;
+    color: rgb(40, 7, 94);
+    text-align: center;
+}
+.divClass {
+    width: 90%;
+    padding-bottom: 30px;
+    margin: 0px auto;
+    background-color: rgba(255, 255, 255, .25);
+    text-align: center;
+}
+
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+li {
+    display: inline-block;
+    list-style-type: none;
+}
+img {
+    padding: 0px;
+    margin: 10px;
+    height: 300px;
+    width: 400px;
+    outline: solid rgb(30, 5, 90) 2px;
+    transition: filter 1s;
+}
+img:hover {
+    filter: saturate(120%);
+    filter: contrast(120%);
+}
+#thirdDiv {
+    position: relative;
+    border: 2px solid rgb(30, 5, 90);
+    width: calc(90% - 2px);
+    margin: 0px auto;
+    background-color: rgba(255, 255, 255, .25);
+    text-align: center;
+    height: auto;
+}
